@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #A9A9A9 !important;
+  background-image:  url('../public/img/pattern.jpg');
 }
 
 code {

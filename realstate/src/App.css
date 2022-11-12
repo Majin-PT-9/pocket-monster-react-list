@@ -41,3 +41,16 @@
   color: aliceblue;
   background-color: #282c34;
 }
+.pokeRow{
+  margin-top: 0.5rem !important;
+}
+.pokeColumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+.pokeCard{
+  
+}

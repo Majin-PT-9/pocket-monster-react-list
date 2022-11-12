@@ -1,4 +1,5 @@
 import React from 'react'
+import {Navbar, NavbarBrand} from 'reactstrap'
 
 
 function Header({title, bgColor, textColor} ){
@@ -7,11 +8,26 @@ function Header({title, bgColor, textColor} ){
         color: textColor
     }
     return (
-    <div>
-        <div className='container style'>
-            <h2>{title}</h2>
-        </div>
-    </div>
+    <>
+  <Navbar
+    color="dark"
+    dark
+    style={{ margin: '0px !important'}}
+  >
+    <NavbarBrand href="/">
+      <img
+        alt="logo"
+        src="./img/logo.svg"
+        style={{
+          height: 40,
+          width: 40
+        }}
+      />
+     {title}
+    </NavbarBrand>
+  </Navbar>
+</>
+    
     )
 }
 
