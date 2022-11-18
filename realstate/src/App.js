@@ -14,7 +14,7 @@ const groupSize = 3;
       .then((res) => {
         setPokemons(res.data.results)
       })
-  })
+  },[])
  
 var rows = pokemons.map(function(pokemon) {
     // map content to html elements
@@ -35,8 +35,6 @@ var rows = pokemons.map(function(pokemon) {
       <Header title={title} bgColor="EFF9F0" textColor="#1C77C3"></Header>
       <Container>
         {rows}
-      
-        
     </Container>
       
     </>
